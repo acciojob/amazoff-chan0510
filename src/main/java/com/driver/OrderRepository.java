@@ -1,10 +1,12 @@
 package com.driver;
 
+import org.springframework.stereotype.Repository;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+@Repository
 public class OrderRepository {
     HashMap<String, Order> orderDb= new HashMap<>();
     HashMap<String, DeliveryPartner> partnerDb= new HashMap<>();
